@@ -1,0 +1,91 @@
+/*============================================ HEADER RESPONSIVE  =======================================*/
+@media screen and (max-width: 1024px) {
+  .logo {
+    left: 100px;
+  }
+
+  nav {
+    left: 250px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .logo {
+    left: 100px;
+  }
+
+  nav {
+    left: 170px;
+  }
+
+  nav a {
+    padding: 0px 10px;
+  }
+}
+
+/*====================================== MAIN RESPONSIVE  =============================*/
+@media screen and (max-width: 1024px) {
+  .main-text-container-on-img {
+    left: 40px;
+  }
+}
+
+/*============================================ MAIN CONTENT RESPONSIVE  ==============================================*/
+@media screen and (max-width: 1024px) {
+  .main-content-wrapper {
+    padding: 25px;
+  }
+
+  .main-content p {
+    font-size: 27px;
+    line-height: 2.6rem;
+  }
+
+  .main-content-info {
+    margin-left: 0px;
+  }
+}
+
+/*============================================== TRAINING COURSE RESPONSIVE  ===========================================*/
+@media screen and (max-width: 1024px) {
+  .training-courses-header h2 {
+    text-align: center;
+  }
+
+  .all-items {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+/*============================================== PROJECT PARTNERS RESPONSIVE  ===========================================*/
+@media screen and (max-width: 1200px) {
+  .arrow-left {
+    left: 20px;
+  }
+
+  .arrow-right {
+    right: 20px;
+  }
+  .first-logo-row img,
+  .second-logo-row img,
+  .third-logo-row img {
+    width: 200px;
+    height: 61px;
+  }
+}
+
+/*============================================== QUESTION RESPONSIVE  =======================================*/
+@media screen and (max-width: 1024px) {
+  .questions-header,
+  .question {
+    width: 90%;
+    margin: auto;
+  }
+
+  .answer {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

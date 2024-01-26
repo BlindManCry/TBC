@@ -1,0 +1,217 @@
+/*======================================= HEADER RESPONSIVE  ========================================*/
+@media screen and (max-width: 544px) {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding-top: 30px;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #212529;
+  }
+
+  .inactive-sidebar {
+    display: none;
+  }
+
+  .sidebar-open-icon {
+    display: block;
+  }
+
+  .logo {
+    left: 320px !important;
+  }
+}
+
+/*========================================== MAIN RESPONSIVE  ======================================*/
+@media screen and (max-width: 544px) {
+  .main-img {
+    object-fit: cover;
+  }
+
+  .main-text-container-on-img {
+    left: 40px;
+  }
+
+  .main-text-container-on-img h1,
+  .main-text-container-on-img h2 {
+    font-size: 20px;
+  }
+}
+
+/*============================================== MAIN CONTENT RESPONSIVE  ===============================================*/
+@media screen and (max-width: 544px) {
+  .main-content-wrapper {
+    padding: 25px;
+  }
+
+  .main-content p {
+    font-size: 22px;
+    line-height: 1.9rem;
+  }
+
+  .main-content-info {
+    margin-left: 0px;
+  }
+}
+
+/*============================================== TRAINING COURSE RESPONSIVE  ===========================================*/
+@media screen and (max-width: 544px) {
+  .training-courses-header h2 {
+    text-align: center;
+  }
+
+  .all-items {
+    grid-template-columns: 1fr !important;
+  }
+
+  .training-courses-details {
+    height: 120px;
+  }
+}
+
+/*============================================== PROJECT PARTNERS RESPONSIVE  ==============================================*/
+@media screen and (max-width: 544px) {
+  .project-partners-header h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .first-logo-row,
+  .second-logo-row {
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+  }
+
+  .third-logo-row {
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    margin-left: 0;
+    top: 100px;
+    justify-content: center;
+  }
+
+  .arrow-right {
+    top: 180px;
+    right: 20px;
+  }
+
+  .arrow-left {
+    top: 180px;
+    left: 20px;
+  }
+
+  .three-dots {
+    margin-top: 400px;
+  }
+}
+
+/*=================================== QUESTIONS RESPONSIVE ===========================================*/
+@media screen and (max-width: 544px) {
+  .questions-header h3 {
+    max-width: 70%;
+  }
+
+  .questions-header p {
+    display: none;
+  }
+
+  .info-for-mobile {
+    display: block;
+  }
+
+  .question {
+    max-width: 90%;
+  }
+
+  .question p {
+    max-width: 80%;
+  }
+
+  .answer p,
+  .steps p {
+    max-width: 85%;
+  }
+}
+
+/*================================= FOOTER RESPONSIVE  ===================================*/
+@media screen and (max-width: 544px) {
+  .footer {
+    display: none;
+  }
+
+  .footer-responsive {
+    display: block;
+    background-color: rgb(26, 30, 31);
+  }
+
+  .footer-resp-wrapper {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo-btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-resp-wrapper img {
+    width: 106px;
+    height: 30px;
+  }
+
+  .footer-resp-wrapper p {
+    color: rgb(244, 244, 244);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .resp-fb-yt-logos img {
+    width: 39px;
+    height: 39px;
+  }
+
+  .resp-fb-yt-logos {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-btn-resp {
+    text-decoration: none;
+    background-color: rgb(0, 174, 243);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 8px 19px 0px 19px;
+    height: 30px;
+    border-radius: 6px;
+  }
+}
