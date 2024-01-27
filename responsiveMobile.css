@@ -15,7 +15,7 @@
   }
 
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: flex;
@@ -42,6 +42,17 @@
 
   .logo {
     left: 320px !important;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .logo {
+    left: 380px !important;
+  }
+
+  .logo svg {
+    width: 132px;
+    height: 30px;
   }
 }
 
@@ -89,13 +100,23 @@
 
   .training-courses-details {
     height: 120px;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .training-courses-text {
+    gap: 20px;
+  }
+
+  .training-courses-text p {
+    font-size: 14px;
   }
 }
 
 /*============================================== PROJECT PARTNERS RESPONSIVE  ==============================================*/
 @media screen and (max-width: 544px) {
   .project-partners-header h4 {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
   }
 

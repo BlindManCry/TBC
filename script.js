@@ -1,7 +1,38 @@
-////////////////////////// SIDEBAR OPEN FOR MOBILE (RESPONSIVE) /////////////////////////////////////////////
+////////////////////////////////////// DOM ELEMENTS ////////////////////////////////////////////
+//SIDEBAR
 const sideBar = document.querySelector(".sidebar");
 const openSidebarIcon = document.querySelector(".sidebar-open-icon");
 const closeSidebarIcon = document.querySelector(".sidebar-close-icon");
+//HEADER
+const header = document.querySelector("header");
+//PROJECT PARTNERS SLIDER
+const projectPartners = document.querySelector(".project-partners");
+const leftArrow = document.querySelector(".arrow-left");
+const rightArrow = document.querySelector(".arrow-right");
+const firstDot = document.querySelector(".first-dot");
+const secondDot = document.querySelector(".second-dot");
+const thirdDot = document.querySelector(".third-dot");
+const firstRow = document.querySelector(".first-logo-row");
+const secondRow = document.querySelector(".second-logo-row");
+const thirdRow = document.querySelector(".third-logo-row");
+//QUESTION
+const firtsQuestion = document.querySelector(".first-question");
+const secondQuestion = document.querySelector(".second-question");
+const thirdQuestion = document.querySelector(".third-question");
+
+const firstIconUp = document.querySelector(".first-icon-up");
+const secondIconUp = document.querySelector(".second-icon-up");
+const thirdIconUp = document.querySelector(".third-icon-up");
+
+const firtsIconDown = document.querySelector(".first-icon-down");
+const secondIconDown = document.querySelector(".second-icon-down");
+const thirdIconDown = document.querySelector(".third-icon-down");
+
+const firstAnswer = document.querySelector(".first-answer");
+const secondAnswer = document.querySelector(".second-answer");
+const thirdAnswer = document.querySelector(".third-answer");
+
+////////////////////////// SIDEBAR OPEN FOR MOBILE (RESPONSIVE) /////////////////////////////////////////////
 
 openSidebarIcon.addEventListener("click", () => {
   sideBar.classList.remove("inactive-sidebar");
@@ -12,7 +43,7 @@ closeSidebarIcon.addEventListener("click", () => {
 });
 
 //////////////////////////////// GIVE HEADER OPACITY AFTER SCROLL ////////////////////////////////////////////
-const header = document.querySelector("header");
+
 let headerPosition = header.offsetTop;
 
 window.addEventListener("scroll", () => {
@@ -29,16 +60,6 @@ window.addEventListener("scroll", () => {
 
 /////////////////////////////////////////////// SLIDER ////////////////////////////////////////////////////
 // SLider By Click
-const leftArrow = document.querySelector(".arrow-left");
-const rightArrow = document.querySelector(".arrow-right");
-
-const firstDot = document.querySelector(".first-dot");
-const secondDot = document.querySelector(".second-dot");
-const thirdDot = document.querySelector(".third-dot");
-
-const firstRow = document.querySelector(".first-logo-row");
-const secondRow = document.querySelector(".second-logo-row");
-const thirdRow = document.querySelector(".third-logo-row");
 
 let rowPosition = 1;
 
@@ -98,7 +119,6 @@ let autoSlider = setInterval(() => {
 }, 3000);
 
 // STOP AUTO SLIDER
-const projectPartners = document.querySelector(".project-partners");
 
 projectPartners.addEventListener("mouseover", () => {
   clearInterval(autoSlider);
@@ -113,21 +133,6 @@ projectPartners.addEventListener("mouseleave", () => {
 });
 
 ////////////////////////////////////// QUESTION AND ANSWER (ANSWER SHOW) //////////////////////////////////////
-const firtsQuestion = document.querySelector(".first-question");
-const secondQuestion = document.querySelector(".second-question");
-const thirdQuestion = document.querySelector(".third-question");
-
-const firstIconUp = document.querySelector(".first-icon-up");
-const secondIconUp = document.querySelector(".second-icon-up");
-const thirdIconUp = document.querySelector(".third-icon-up");
-
-const firtsIconDown = document.querySelector(".first-icon-down");
-const secondIconDown = document.querySelector(".second-icon-down");
-const thirdIconDown = document.querySelector(".third-icon-down");
-
-const firstAnswer = document.querySelector(".first-answer");
-const secondAnswer = document.querySelector(".second-answer");
-const thirdAnswer = document.querySelector(".third-answer");
 
 let answerPosition = "";
 

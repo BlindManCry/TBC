@@ -193,7 +193,7 @@ nav a:hover,
 }
 
 .training-courses-item img {
-  width: 300px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 5px;
@@ -309,6 +309,8 @@ nav a:hover,
 
 .inactive-logos {
   opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .arrow-left,
@@ -319,14 +321,14 @@ nav a:hover,
 }
 
 .arrow-left {
-  left: 90px;
   top: 90px;
+  left: 90px;
   stroke: rgb(244, 244, 244);
 }
 
 .arrow-right {
-  right: 90px;
   top: 90px;
+  right: 90px;
   stroke: rgb(244, 244, 244);
   transform: rotateY(180deg);
 }
